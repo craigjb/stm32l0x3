@@ -1,0 +1,16 @@
+[package]
+name = "stm32l0x3"
+version = "0.1.0"
+authors = ["Craig Bishop <craig@craigjb.com>"]
+
+[dependencies]
+bare-metal = "0.2.4"
+cortex-m = "0.6.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.8"
+
+[features]
+rt = ["cortex-m-rt/device"]
