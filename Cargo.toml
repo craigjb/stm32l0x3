@@ -4,13 +4,15 @@ version = "0.1.0"
 authors = ["Craig Bishop <craig@craigjb.com>"]
 
 [dependencies]
-bare-metal = "0.2.4"
-cortex-m = "0.6.0"
-vcell = "0.1.0"
+bare-metal = "0.2.5"
+vcell = "0.1.2"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.8"
+version = "0.6.11"
+
+[dependencies.cortex-m]
+version = "0.6.1"
 
 [features]
 rt = ["cortex-m-rt/device"]

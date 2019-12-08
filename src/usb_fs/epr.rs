@@ -6,7 +6,7 @@ pub struct R {
 pub struct W {
     bits: u32,
 }
-impl super::EP3R {
+impl super::EPR {
     #[doc = r" Modifies the contents of the register"]
     #[inline]
     pub fn modify<F>(&self, f: F)
@@ -458,7 +458,7 @@ impl R {
     }
     #[doc = "Bits 9:10 - EPTYPE"]
     #[inline]
-    pub fn eptype(&self) -> EPTYPER {
+    pub fn ep_type(&self) -> EPTYPER {
         let bits = {
             const MASK: u8 = 3;
             const OFFSET: u8 = 9;
@@ -551,7 +551,7 @@ impl W {
     }
     #[doc = "Bits 9:10 - EPTYPE"]
     #[inline]
-    pub fn eptype(&mut self) -> _EPTYPEW {
+    pub fn ep_type(&mut self) -> _EPTYPEW {
         _EPTYPEW { w: self }
     }
     #[doc = "Bit 8 - EP_KIND"]
